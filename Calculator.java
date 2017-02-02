@@ -17,6 +17,27 @@ public class Calculator
 			this.result += param;
 		}
 	}
+	
+	public void razn(int a, int b)
+	{
+		
+			this.result = a - b;
+		
+	}
+	
+	public void del(int a, int b)
+	{
+		
+			this.result = a / b;
+		
+	}
+	
+	public void umnoj(int a, int b)
+	{
+		
+			this.result = a * b;
+		
+	}
 	/*
 		Получить результат.
 		@return результат вычисления.

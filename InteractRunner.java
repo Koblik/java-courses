@@ -18,8 +18,16 @@ public class InteractRunner
 				System.out.println("Enter second arg:");
 				String second = reader.next();
 				calc.add(Integer.valueOf(first),Integer.valueOf(second));
-				System.out.println("Result:" + calc.getResult());
+				System.out.println("Сумма:" + calc.getResult());
 				calc.cleanResult();
+				calc.razn(Integer.valueOf(first),Integer.valueOf(second));
+				System.out.println("Разность: " + calc.getResult());
+				calc.cleanResult();
+				calc.del(Integer.valueOf(first),Integer.valueOf(second));
+				System.out.println("Деление: " + calc.getResult());
+				calc.cleanResult();
+				calc.umnoj(Integer.valueOf(first),Integer.valueOf(second));
+				System.out.println("Произведение: " + calc.getResult());
 				System.out.println("Exit : yes/no ");
 			}
 		} finally {reader.close();}
